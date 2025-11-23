@@ -1,10 +1,8 @@
-@vite([
-    'resources/js/app.js',
-    'resources/assets/js/bootstrap.bundle.min.js',
-    'resources/assets/js/jquery.slimscroll.min.js',
-    'resources/assets/plugins/jquery-repeater/jquery.repeater.min.js',
-    'resources/assets/js/app.js',
-])
+<!-- JS Vendor -->
+<script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}"></script>
+<script src="{{ asset('assets/plugins/jquery-repeater/jquery.repeater.min.js') }}"></script>
+<script src="{{ asset('assets/js/app.js') }}"></script>
 <!-- Vendor JS -->
 
 @livewireScriptConfig 
