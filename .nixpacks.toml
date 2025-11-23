@@ -1,7 +1,5 @@
-# --- INSTALL PHP + NODE ---
 [phases.setup]
 nixPkgs = [
-  "php82",
   "php82Extensions.bcmath",
   "php82Extensions.zip",
   "php82Extensions.exif",
@@ -9,19 +7,16 @@ nixPkgs = [
   "nodejs_20"
 ]
 
-# --- INSTALL DEPENDENCIES ---
 [phases.install]
 cmds = [
   "composer install --no-dev --optimize-autoloader",
   "npm install"
 ]
 
-# --- BUILD FRONTEND ---
 [phases.build]
 cmds = [
   "npm run build"
 ]
 
-# --- START SERVER ---
 [phases.start]
 cmd = "php artisan serve --host=0.0.0.0 --port=$PORT"
