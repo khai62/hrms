@@ -1,0 +1,2 @@
+[extensions]
+php = ["bcmath", "zip", "gd", "exif"]
